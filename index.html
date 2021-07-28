@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/tools.css">
     <link rel="stylesheet" href="./src/css/about.css">
+    <link rel="stylesheet" href="./src/css/contact.css">
 
     <title>Portfolio - Matías Pinto</title>
 </head>
@@ -16,26 +17,37 @@
     <header class="header">
         <!-- logo -->
         <nav class="nav">
-            <a href="" class="nav-item">Matias</a>
-            <a href="" class="nav-item">Conocimientos</a>
+            <a href="#aboutme" class="nav-item">Matias</a>
+            <a href="#conocimientos" class="nav-item">Conocimientos</a>
             <a href="" class="nav-item">Proyectos</a>
-            <a href="" class="nav-item">Contacto</a>
+            <a href="#contacto" class="nav-item">Contacto</a>
         </nav>
 
         <div class="icons">
-            <a href=""><i class="fa fa-github-square icons-item" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin-square icons-item" aria-hidden="true"></i></a>
+            <a href="https://github.com/machi918" target="_blank"><i class="fa fa-github-square icons-item" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/matias-pinto/" target="_blank"><i class="fa fa-linkedin-square icons-item" aria-hidden="true"></i></a>
         </div>
         <!-- Logos de coso -->
 
     </header>
     <div class="main">
-        <div class="aboutme">
-            <div class="profile">
-                <p>¡Hola!</p>
-            </div>
+        <div class="aboutme" id="aboutme">
+            <class class="about-wrapper">
+                <div class="card-wrapper">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="side">ADELANTE</div>
+                            <div class="side back">ATRAS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>¡Bienvenido a mi Portfolio!</h2>
+                    <p>Me llamo Matías, soy estudiante de Ingeniería informática. Actualmente, me encuentro en búsqueda de mi primer trabajo como desarrollador mobile y/o front-end web</p>
+                </div>
+            </class>
         </div>
-        <div class="conocimientos">
+        <div class="conocimientos" id="conocimientos">
             <div class="text-conocimientos">
                 <h2>Algunos de mis conocimientos</h2>
                 <p>Las siguientes son algunas de las herramientas las cuales utilizo para desarrollar.</p>
@@ -65,8 +77,33 @@
                 <p>GIT</p>
             </div>
             <div class="item-conocimiento">
-                <i class="devicon-mysql-plain colored tool-icon"></i>
+                <!-- <i class="devicon-mysql-plain colored tool-icon"></i> -->
+                <object data="./src/images/database-svgrepo-com.svg" width="100" height="100"> </object>
                 <p>Base de datos: NoSQL y SQL</p>
+            </div>
+        </div>
+        <div class="contacto-wrapper" id="contacto">
+            <div class="contacto">
+                <div class="pages">
+                    <h2>Contáctame</h2>
+                    <p>¡Si desea que forme parte de tu equipo o empezar un proyecto juntos, no dudes en contactarme!. Si se siente más a gusto, puede completar el formulario. ¡Lo que desee!. Me contactaré con usted lo antes posible.</p>
+                    <a href="https://www.linkedin.com/in/matias-pinto/"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="inPagesText">matias-pinto</span></a>
+                    <a href="https://github.com/machi918"><i class="fa fa-github-square" aria-hidden="true"></i><span class="inPagesText">machi918</span></a>
+                    <a href="mailto:mati.d.pinto@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i><span class="inPagesText">mati.d.pinto@gmail.com</span></a>
+                </div>
+                <div class="input-form">
+                    <form>
+                        <h2>Escríbeme</h2>
+                        <!-- <label for="name">Nombre / Empresa</label> -->
+                        <input type="text" id="name" name="name" placeholder="Nombre / Empresa..." required>
+                        <!-- <label for="email"></label> -->
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico...." required>
+                        <!-- <label for="paragraph"></label> -->
+                        <!-- <input type="text" name="paragraph" id="paragraph" placeholder="Escríbeme algo..." required> -->
+                        <textarea name="paragraph" id="paragraph" placeholder="Escríbeme algo..." required style="height: 100px; resize: none;"></textarea>
+                        <button type="submit" class="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -78,8 +115,8 @@
             <a href="" class="nav-item">Contacto</a>
         </nav>
         <div class="icons">
-            <a href=""><i class="fa fa-github-square icons-item" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin-square icons-item" aria-hidden="true"></i></a>
+            <a href="https://github.com/machi918"><i class="fa fa-github-square icons-item" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/matias-pinto/"><i class="fa fa-linkedin-square icons-item" aria-hidden="true"></i></a>
             <a href="mailto:mati.d.pinto@gmail.com"><i class="fa fa-envelope icons-item" aria-hidden="true"></i></a>
         </div>
 

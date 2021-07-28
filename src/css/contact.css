@@ -1,0 +1,107 @@
+*{
+    --border-grey: #e0e0e0;
+    --secondary-color: #F2F2F2;
+    --header-footer-color: #525558;
+    --hover-color: #759eff;
+    --nav-font-size: 20px;
+    --nav-icon-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.contacto-wrapper{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+
+    z-index: 100;
+}
+
+.contacto{
+    width: 70%;
+    height: 400px;
+
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: var(--border-grey);
+    border-style: solid;
+
+    animation-name: example;
+    animation-duration: 4s;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages{
+    width: 50%;
+    height: 100%;
+    /* padding: 25px 25px; */
+    /* background-color: aquamarine; */
+    
+    border-width: 2px;
+    border-right-style: solid;
+    border-color: var(--border-grey);
+}
+
+.input-form{
+    width: 50%;
+    height: 100%;
+    padding: 25px 25px;
+    
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label{
+    /* align-self: flex-start; */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+}
+
+input, textarea{
+    width: 90%;
+    border-width: 1px;
+    border-color: var(--border-grey);
+    border-style: solid;
+    border-top-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submit{
+    height: 40px;
+    width: 40%;
+
+    border-radius: 10px;
+    border-style: none;
+
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.submit:hover{
+    background-color: #759eff;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@keyframes example {
+    
+
+}
+/* The element to apply the animation to*/

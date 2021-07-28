@@ -6,7 +6,6 @@
     --nav-font-size: 20px;
     --nav-icon-size: 30px;
     --secondary-color: rgba(242, 242, 242, 0.773);
-
 }
 
 a{
@@ -22,7 +21,7 @@ body{
 
 .header{
     background-color: var(--header-footer-color);
-    height: 10%;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -30,6 +29,8 @@ body{
     position: fixed;
     top:0;
     width: 100%;
+
+    z-index: 100;
 }
 
 .nav{
@@ -44,6 +45,10 @@ body{
     padding-right: 10;
     font-size: var(--nav-font-size);
     border-radius: 25px;
+
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 .nav .nav-item:hover{
@@ -54,6 +59,10 @@ body{
 .icons .icons-item{
     font-size: var(--nav-icon-size);
     margin: 0px 5px 0px 5px;
+
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 .icons .icons-item:hover{
@@ -68,9 +77,6 @@ body{
     flex-direction: column;
     /* margin-top: 5%; */
 }
-
-
-
 
 /* ----------------------------------------- */
 

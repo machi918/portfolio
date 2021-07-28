@@ -38,6 +38,15 @@
     padding: 10px;
 
     cursor: pointer;
+
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    /* PRUEBAS */
+    position: relative;
+    animation-name:movement;
+    animation-duration:2s;
+
 }
 
 .item-conocimiento:hover{
@@ -46,4 +55,13 @@
 
 .tool-icon{
     font-size: 100px;
+}
+
+@keyframes movement {
+    from{
+        transform: translateY(75px);
+    }
+    to{
+        transform: translateY(0px);
+    }
 }
