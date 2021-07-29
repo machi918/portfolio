@@ -11,8 +11,9 @@
 .conocimientos{
     height: 400;
     width: 70%;
-    align-self: center;
     margin: 20px 0 20px 0;
+
+    align-self: center;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -42,11 +43,10 @@
     transition-property: box-shadow;
     transition-duration: 0.2s;
     transition-timing-function: linear;
-    /* PRUEBAS */
+
     position: relative;
     animation-name:movement;
     animation-duration:2s;
-
 }
 
 .item-conocimiento:hover{
