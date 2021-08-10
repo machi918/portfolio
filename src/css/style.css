@@ -35,6 +35,10 @@ body{
     z-index: 1000;
 }
 
+.burguer-menu-head{
+    display: none;
+}
+
 .nav .nav-item{
     display: inline-block;
     padding: 4px 6px 4px 6px;
@@ -123,6 +127,8 @@ body{
 /*Portrait*/
 /*Default*/
 @media (max-width: 575.98px)and (orientation:portrait) {
+
+    /* footer */
     .footer .nav{
         display: none;
     }
@@ -132,9 +138,38 @@ body{
     }
 
     .footer h6{
-        /* margin: 10px 0 10px 0px; */
         text-align: center;
         padding: 10px 25px 10px 25px;
+    }
+
+    /* header */
+    .header{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .burguer-menu-head{
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+    .burguer{
+        color:#FFFFFF;
+        font-size: 30px;
+
+    }
+
+    .burguer:hover{
+        color: red;
+    }
+
+    .header .icons{
+        display: none;
+    }
+
+    .nav{
+        display: none;
     }
  }
 /*landscape*/
