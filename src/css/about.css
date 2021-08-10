@@ -102,3 +102,52 @@
     width: 80%;
 }
 /* Fin about content */
+
+/* --------------------------------------- */
+
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+    
+
+    
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    
+
+
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    
+
+
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .card-wrapper{
+        display: none;
+    }
+
+    .about-content{
+        width: 100%;
+
+        border-style: none;
+    }
+
+
+}
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    
+
+}
+/*fin movil*/
