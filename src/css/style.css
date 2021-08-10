@@ -99,6 +99,48 @@ body{
 
 /* --------------------------------------------------------- */
 
+.burguer-menu{
+    position: absolute;
+    height: 100vh;
+    width: 90%;
+    top: 0;
+    left: 0;
+
+    background-color: red;
+
+    animation-name:movement-menu-act;
+    animation-duration:0.5s;
+
+    z-index: 100000;
+}
+
+.close{
+    width: 0%;
+    animation-name:movement-menu-back;
+    animation-duration:0.5s;
+}
+
+@keyframes movement-menu-act {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes movement-menu-back {
+    from{
+        width: 90%;
+    }
+    to{
+        width: 0%;
+        display: none;
+    }
+}
+/* --------------------------------------------------------- */
+
+
 
 /*Escritorio*/
 @media (min-width: 1199.98px)  {
