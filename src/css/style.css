@@ -99,7 +99,7 @@ body{
 /*Escritorio*/
 @media (min-width: 1199.98px)  {
     
-    
+
 }
 /*Fin Escritorio*/
 
@@ -132,8 +132,9 @@ body{
     }
 
     .footer h6{
-        margin: 10px 0 10px 0px;
+        /* margin: 10px 0 10px 0px; */
         text-align: center;
+        padding: 10px 25px 10px 25px;
     }
  }
 /*landscape*/
